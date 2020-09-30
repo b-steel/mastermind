@@ -1,4 +1,4 @@
-import game, code, player, strategy 
+import game
 import colors as c
 
 finished = False
@@ -14,7 +14,7 @@ while True:
         else:
             print(f'{c.bcolors.WARNING}HMM... That wasn\'t a valid number...{c.bcolors.ENDC}')
     else: 
-        again = input('Would you like to play again? Enter Y/N\n')
+        again = input(f'\n {c.bcolors.FAIL}Would you like to play again? Enter Y/N {c.bcolors.ENDC} \n')
         if again == 'Y' or again == 'y':
            finished = False
         elif again =='N' or again == 'n':
